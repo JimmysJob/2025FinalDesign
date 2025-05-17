@@ -1,0 +1,14 @@
+// base
+@import "/assets/scss/base/reset";
+@import "/assets/scss/base/base";
+
+// utils
+@import "/assets/scss/utils/variables";
+@import "/assets/scss/utils/mixins";
+
+// layout
+@import "/assets/scss/layout/header";
+@import "/assets/scss/layout/footer";
+
+// pages
+@import "/assets/scss/pages/index";
