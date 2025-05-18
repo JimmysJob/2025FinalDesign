@@ -9,10 +9,25 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1>Test</h1>
+    <header class="header">
+      <div class="d-flex">
+        <div class="w-50">
+          <img
+            src="/assets/images/Final/desktop/index/Hero Section.png"
+            alt="woman"
+            class="header-img"
+          />
+        </div>
+        <div
+          class="header-bg w-50 d-flex f-direction-column justify-center ps-20"
+        >
+          <h1 class="header-title fw-900 fs-6 mb-3">Alyse Wang</h1>
+          <p class="header-text fw-700 fs-3">前端工程師 & 職涯諮詢師</p>
+        </div>
+      </div>
+    </header>
 
     <%- include('./layout/footer'); -%>
-
     <script type="module" src="../main.js"></script>
   </body>
 </html>

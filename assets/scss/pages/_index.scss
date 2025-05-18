@@ -1,0 +1,13 @@
+.header {
+  &-bg {
+    background-image: url(/assets/images/Final/desktop/index/Hero\ Section2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-title {
+    color: $primary-color;
+  }
+  &-text {
+    color: $primary-color;
+  }
+}

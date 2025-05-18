@@ -1,10 +1,13 @@
-// base
-@import "/assets/scss/base/reset";
-@import "/assets/scss/base/base";
+// 字體import
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 
 // utils
 @import "/assets/scss/utils/variables";
 @import "/assets/scss/utils/mixins";
+
+// base
+@import "/assets/scss/base/reset";
+@import "/assets/scss/base/base";
 
 // layout
 @import "/assets/scss/layout/header";
