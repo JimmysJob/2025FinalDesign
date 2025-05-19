@@ -25,12 +25,21 @@ img {
   margin: 0 auto;
 }
 
+.container-xl {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .w-50 {
   width: 50%;
 }
 
 .d-flex {
   display: flex;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .f-direction-column {

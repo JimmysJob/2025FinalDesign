@@ -1,13 +1,29 @@
 .header {
-  &-bg {
+  &-position {
     background-image: url(/assets/images/Final/desktop/index/Hero\ Section2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @include max-md {
+      padding: 0;
+      text-align: center;
+    }
   }
   &-title {
     color: $primary-color;
   }
   &-text {
     color: $primary-color;
+  }
+
+  @include max-xl {
+    flex-direction: column;
+  }
+  &-img {
+    width: 100%;
+  }
+  &-title {
+    @include max-md {
+      font-size: 52px;
+    }
   }
 }
