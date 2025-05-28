@@ -3,13 +3,16 @@
     background-image: url(/assets/images/Final/desktop/index/Hero\ Section2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @include max-md {
-      padding: 0;
+    @include max-xl {
+      padding: 24px;
       text-align: center;
     }
   }
   &-title {
     color: $primary-color;
+    @include max-md {
+      font-size: 52px;
+    }
   }
   &-text {
     color: $primary-color;
@@ -21,9 +24,226 @@
   &-img {
     width: 100%;
   }
+}
+
+.main {
+  &-content {
+    max-width: 1077px;
+    padding: 80px 40px;
+    margin: -40px 80px 0 auto;
+    background-color: #fff;
+    position: relative;
+    @include max-xl {
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+  }
+}
+
+.server {
+  &-plan {
+    padding: 0 110px;
+    @include max-xl {
+      padding: 0;
+    }
+  }
+  &-decorator {
+    display: inline-block;
+    padding: 18.75px 5px;
+  }
+  &-line {
+    width: 30px;
+    height: 2.5px;
+    background-color: $primary-color;
+    border-radius: 40px;
+  }
   &-title {
     @include max-md {
-      font-size: 52px;
+      text-align: center;
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include max-xl {
+      flex-direction: column;
+      margin-bottom: 32px;
+    }
+  }
+  &-content {
+    margin-left: -40px;
+    @include max-xl {
+      margin-left: 0;
+    }
+  }
+  &-right {
+    margin-right: -40px;
+    @include max-xl {
+      margin-right: 0;
+    }
+  }
+  &-information {
+    font-size: 24px;
+  }
+}
+
+.featured {
+  &-hashtag {
+    color: $primary-color;
+  }
+  &-popularity {
+    color: #fff;
+    background-color: $primary-color;
+    padding: 6px 12px;
+    border-radius: 40px;
+  }
+  &-link {
+    color: $info-color;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 40px;
+  }
+  &-title {
+    @include max-md {
+      text-align: center;
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include max-xl {
+      width: 100%;
+    }
+  }
+  &-img {
+    @include max-xl {
+      width: 100%;
+    }
+  }
+  &-d-none {
+    @include max-xl {
+      display: none;
+    }
+  }
+  @include max-md {
+    padding: 48px 0;
+  }
+}
+
+.consult {
+  &-description-top {
+    max-width: 526px;
+    padding: 80px 40px;
+    margin-left: -100px;
+    margin-top: 25px;
+    @include max-xl {
+      max-width: 100%;
+      margin: 0 0 24px 0;
+      padding: 40px 20px;
+    }
+  }
+  &-description-bottom {
+    padding: 80px 40px;
+    max-width: 526px;
+    margin-top: -40px;
+    &-link {
+      padding: 8px 16px;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 40px;
+    }
+    @include max-xl {
+      max-width: 100%;
+      margin: 0;
+      padding: 40px 20px;
+    }
+  }
+  &-description {
+    @include max-xl {
+      flex-direction: column;
+    }
+  }
+  &-img {
+    @include max-xl {
+      width: 100%;
+    }
+  }
+  &-card-link {
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 40px;
+  }
+  &-list {
+    @include max-xl {
+      width: 50%;
+      margin-bottom: 24px;
+    }
+    @include max-md {
+      width: 100%;
+    }
+  }
+}
+
+.donate {
+  &-position {
+    background-image: url(/assets/images/Final/desktop/index/Hero\ Section2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include max-xl {
+      padding: 12px;
+    }
+  }
+  &-input {
+    padding: 8px 16px;
+    border: none;
+  }
+  &-link {
+    padding: 8px 16px;
+    border: 1px solid $primary-color;
+    border-radius: 40px;
+    color: $primary-color;
+  }
+  @include max-xl {
+    flex-direction: column;
+  }
+  &-img {
+    @include max-xl {
+      width: 100%;
+    }
+  }
+  &-content {
+    @include max-xl {
+      padding: 40px 24px;
+      width: 100%;
+    }
+  }
+  &-content-title {
+    @include max-md {
+      font-size: 48px;
+    }
+  }
+}
+
+.connect {
+  &-mail {
+    text-decoration: underline;
+    color: #000;
+    @include max-md {
+      font-size: 24px;
+    }
+  }
+  &-title {
+    @include max-md {
+      font-size: 48px;
+    }
+  }
+  &-list {
+    @include max-md {
+      flex-wrap: wrap;
+    }
+  }
+  &-list-mail {
+    @include max-md {
+      flex-wrap: wrap;
+      gap: 8px;
     }
   }
 }
