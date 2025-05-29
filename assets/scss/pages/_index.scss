@@ -87,6 +87,41 @@
 }
 
 .featured {
+  .swiper-wrapper-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .swiper {
+    width: 90%;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .swiper-button-next {
+    margin-right: -10px;
+  }
+  .swiper-button-prev {
+    margin-left: -10px;
+  }
+
   &-hashtag {
     color: $primary-color;
   }
