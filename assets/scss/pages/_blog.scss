@@ -1,0 +1,33 @@
+.banner {
+  &-content {
+    max-width: 636px;
+  }
+  &-hashtag {
+    color: $primary-color;
+  }
+  &-tag {
+    color: #fff;
+    background-color: $primary-color;
+    padding: 6px 12px;
+    border-radius: 40px;
+  }
+  &-link {
+    color: $info-color;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 40px;
+  }
+  @include max-lg {
+    flex-direction: column;
+  }
+  &-img {
+    @include max-lg {
+      width: 100%;
+    }
+  }
+  &-content-container {
+    @include max-lg {
+      padding: 0 12px;
+    }
+  }
+}
