@@ -58,6 +58,10 @@ img {
   position: relative;
 }
 
+.position-absolute {
+  position: absolute;
+}
+
 .text-center {
   text-align: center;
 }
@@ -112,6 +116,10 @@ img {
 
 .p-3 {
   padding: 12px;
+}
+
+.p-4 {
+  padding: 16px;
 }
 
 .p-6 {
@@ -240,6 +248,14 @@ img {
 
 .bc-f1 {
   background-color: #f1f1f1;
+}
+
+.bc-4b {
+  background-color: #4b4b4b;
+}
+
+.text-4b {
+  color: #4b4b4b;
 }
 
 .primary-text {
