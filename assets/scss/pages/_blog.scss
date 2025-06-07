@@ -16,6 +16,9 @@
     padding: 8px 16px;
     border: 1px solid #000;
     border-radius: 40px;
+    @include max-lg {
+      margin-bottom: 16px;
+    }
   }
   @include max-lg {
     flex-direction: column;
@@ -79,5 +82,16 @@
     @include max-xl {
       width: 100%;
     }
+  }
+  &-nav {
+    :hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.connect-md-none {
+  @include max-md {
+    display: none;
   }
 }
