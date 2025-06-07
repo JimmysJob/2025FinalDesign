@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Content</title>
+  </head>
+  <body>
+    <%- include('./layout/header');-%>
+    <div class="banner d-flex">
+      <div class="flex-1">
+        <img
+          src="/assets/images/Final/desktop/blog/About Section.png"
+          alt="computer"
+          class="banner-img"
+        />
+      </div>
+      <div
+        class="banner-content-container flex-1 d-flex f-direction-column justify-center ps-6"
+      >
+        <div class="banner-content">
+          <time class="fw-500 mb-1">2024/10/21</time>
+          <div class="d-flex align-center gap-2 mb-2">
+            <a href="#" class="banner-hashtag fw-500 fs-2"
+              >#前端開發 #職涯成長</a
+            >
+            <p class="banner-tag fw-700">最新文章</p>
+          </div>
+          <h3 class="fw-700 fs-3 mb-2">自學前端不用怕：從零開始的三大關鍵</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-sm">
+      <article class="blog-article py-20">
+        <div class="mb-12">
+          <h3 class="fw-700 fs-3 text-primary mb-6">前言</h3>
+          <p class="fw-500">
+            嗨，我是
+            Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+            其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！
+          </p>
+        </div>
+        <div class="mb-12">
+          <div class="mb-6">
+            <img
+              src="/assets/images/Final/desktop/blog-content/content1.png"
+              alt="computer"
+            />
+          </div>
+          <h3 class="fw-700 fs-3 text-primary mb-6">
+            打好基礎：HTML、CSS、JavaScript
+          </h3>
+          <ul>
+            <li>
+              <h4 class="fw-700 fs-1 mb-3">HTML 與語意化</h4>
+              <p class="fw-500 mb-2">
+                為何重要：HTML 是網頁結構的根基，語意化寫法（如 header, main,
+                footer 等）能讓網頁更具可維護性與 SEO 效益。
+              </p>
+              <p class="fw-500">建議做法：</p>
+              <ol class="blog-content-list mb-6">
+                <li>
+                  <p class="fw-500">
+                    學習常見標籤的用途與屬性，如
+                    &lt;section&gt;、&lt;article&gt;、&lt;nav&gt;。
+                  </p>
+                </li>
+                <li>
+                  <p class="fw-500">
+                    善用 MDN、W3Schools 等官方文件，找尋範例程式碼並練習。
+                  </p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <h4 class="fw-700 fs-1 mb-3">CSS 佈局與預處理器</h4>
+              <p class="fw-500 mb-2">
+                為何重要：好看的網站來自穩定的排版與佈局，掌握 Flexbox、Grid
+                能讓你隨心所欲打造響應式頁面。
+              </p>
+              <p class="fw-500">建議做法：</p>
+              <ol class="blog-content-list mb-6">
+                <li>
+                  <p class="fw-500">
+                    先掌握基礎 CSS 後，再學習 SASS 或 LESS
+                    這類預處理器，提升樣式開發效率。
+                  </p>
+                </li>
+                <li>
+                  <p class="fw-500">
+                    善用
+                    <a href="#" class="fw-500 text-primary">CSS-Tricks</a>
+                    等資源，了解常見版型技巧。
+                  </p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <h4 class="fw-700 fs-1 mb-3">JavaScript 核心觀念</h4>
+              <p class="fw-500 mb-2">
+                為何重要：互動效果、資料處理、前端邏輯都仰賴 JavaScript。
+              </p>
+              <p class="fw-500">建議做法：</p>
+              <ol class="blog-content-list mb-6">
+                <li>
+                  <p class="fw-500">
+                    先打穩 ES5 與 ES6 語法基礎，理解閉包 (Closure)、原型鍊
+                    (Prototype) 等核心機制。
+                  </p>
+                </li>
+                <li>
+                  <p class="fw-500">
+                    學會事件監聽、API 資料串接等常見應用，增添網站互動性。
+                  </p>
+                </li>
+              </ol>
+            </li>
+          </ul>
+          <p class="blog-content-summary fw-700">
+            小結：在學習基礎語法時，同步進行小專案實作（如 Todo
+            List、計算機、切版作品集）會讓你進步更快，也能累積展示用作品。
+          </p>
+        </div>
+        <div class="mb-12">
+          <div class="mb-6">
+            <img
+              src="/assets/images/Final/desktop/blog-content/content2.png"
+              alt="computer"
+            />
+          </div>
+          <h3 class="fw-700 fs-3 text-primary mb-6">擅用主流框架與工具</h3>
+          <h4 class="fw-700 fs-1 mb-4">React、Vue 先挑一個</h4>
+          <ul class="blog-content-list-circle mb-6">
+            <li class="fw-500">
+              React：生態系豐富、社群支援強，適合喜歡客製化的工程師。
+            </li>
+            <li class="fw-500">
+              Vue：上手容易、檔案結構直覺，適合對「漸進式開發」有興趣的開發者。
+            </li>
+          </ul>
+          <p class="blog-content-summary fw-700 mb-6">
+            TIP：可以先看官方文件或跟著基礎教學做出小專案，感受哪個框架更順手。
+          </p>
+          <ul>
+            <li class="mb-6">
+              <h4 class="fw-700 fs-1 mb-3">版本控制、協作與建置</h4>
+              <ul class="blog-content-list-circle">
+                <li class="fw-500">
+                  Git 與 GitHub：一定要掌握分支、Pull Request、Code Review
+                  等流程，並熟悉 Git Flow 或 Trunk Based Development。
+                </li>
+                <li class="fw-500">
+                  打包工具：了解 Webpack、Vite、Parcel
+                  等常見工具的基本原理與設定，對於優化與部署大有幫助。
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4 class="fw-700 fs-1 mb-3">自動化測試與最佳實踐</h4>
+              <ul class="blog-content-list-circle">
+                <li class="fw-500">
+                  測試框架：Jest、Mocha、Cypress 等，建立單元測試與 E2E
+                  測試思維。
+                </li>
+                <li class="fw-500">
+                  程式結構與品質：遵循程式風格
+                  (Lint)、維持命名規範、模組化思考，確保專案可維護。
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <div class="container py-20 connect-md-none">
+      <div class="blog-connect d-flex justify-space-between align-center">
+        <h3 class="fw-500 fs-7">alysewang@hexschool.com</h3>
+        <ul class="d-flex gap-1">
+          <li>
+            <a href="#"
+              ><img
+                src="/assets/images/Final/desktop/index/onlyIcon.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/assets/images/Final/desktop/index/onlyIcon-1.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/assets/images/Final/desktop/index/onlyIcon-2.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/assets/images/Final/desktop/index/icons8-linkedin.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="/assets/images/Final/desktop/index/onlyIcon-3.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

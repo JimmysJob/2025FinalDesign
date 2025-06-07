@@ -34,6 +34,12 @@ img {
   padding: 0 12px;
 }
 
+.container-sm {
+  max-width: 636px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
 .row {
   margin: 0 -12px;
   flex-wrap: wrap;
@@ -190,6 +196,10 @@ img {
   margin-bottom: 40px;
 }
 
+.mb-12 {
+  margin-bottom: 48px;
+}
+
 .mb-16 {
   margin-bottom: 64px;
 }
@@ -260,6 +270,10 @@ img {
 
 .bc-4b {
   background-color: #4b4b4b;
+}
+
+.text-primary {
+  color: $primary-color;
 }
 
 .text-4b {

@@ -1,0 +1,15 @@
+.blog-content {
+  &-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+  }
+  &-summary {
+    padding: 24px;
+    background-color: #ededed;
+    border-radius: 24px;
+  }
+  &-list-circle {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+}
