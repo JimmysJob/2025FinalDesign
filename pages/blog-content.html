@@ -118,7 +118,7 @@
                 </ol>
               </li>
             </ul>
-            <p class="blog-content-summary fw-700">
+            <p data-aos="fade-up" class="blog-content-summary fw-700">
               小結：在學習基礎語法時，同步進行小專案實作（如 Todo
               List、計算機、切版作品集）會讓你進步更快，也能累積展示用作品。
             </p>
@@ -137,7 +137,7 @@
                 Vue：上手容易、檔案結構直覺，適合對「漸進式開發」有興趣的開發者。
               </li>
             </ul>
-            <p class="blog-content-summary fw-700 mb-6">
+            <p data-aos="fade-up" class="blog-content-summary fw-700 mb-6">
               TIP：可以先看官方文件或跟著基礎教學做出小專案，感受哪個框架更順手。
             </p>
             <ul>
@@ -207,7 +207,7 @@
               三大面向做好，就能在前端這條路上穩步前進。若你在學習過程中需要更多建議或想要職涯諮詢，歡迎透過<a href="#"
                 class="blog-content-contact text-primary">聯絡方式</a>與我聯繫！
             </p>
-            <p class="blog-content-summary fw-700 mb-6">「程式替你開路，諮詢替你指路，一起走向更寬廣的未來。」</p>
+            <p data-aos="fade-up" class="blog-content-summary fw-700 mb-6">「程式替你開路，諮詢替你指路，一起走向更寬廣的未來。」</p>
             <p class="fw-500">感謝你的閱讀，如果這篇文章對你有幫助，別忘了幫忙分享，或在下方留言告訴我你的想法，也讓更多人一起受益吧！</p>
           </div>
           <div class="mb-12">
@@ -254,6 +254,20 @@
       </div>
     </div>
     <%- include('./layout/footer'); -%>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          // ─── 可用 `data-aos-*` 覆寫的項目
+          offset: 120,                   // 觸發動畫時，元素與視窗的距離（px）
+          delay: 0,                      // 動畫延遲 0–3000 ms，步進 50 ms
+          duration: 600,                 // 動畫時長 0–3000 ms，步進 50 ms
+          easing: 'ease',                // 動畫預設 easing 函式
+          once: false,                   // true 表示動畫只在第一次向下滾動時播放
+          mirror: true,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
+          anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
+        });
+      </script>
       <script type="module" src="../main.js"></script>
 </body>
 
