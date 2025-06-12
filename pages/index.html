@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
+  <title>blog</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <!-- Google tag (gtag.js) -->
@@ -129,10 +130,10 @@
     <div class="container">
       <div class="featured py-20">
         <h2 class="featured-title fw-700 fs-5 mb-6">部落格精選</h2>
-        <div class="wiper-wrapper-area">
+        <div>
           <div class="swiper">
             <ul class="featured-card swiper-wrapper">
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo5.png" alt="code" class="featured-img" />
                 </div>
@@ -155,7 +156,7 @@
                   <a href="#" class="featured-link fw-500">閱讀內文</a>
                 </div>
               </li>
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo6.png" alt="code" class="featured-img" />
                 </div>
@@ -176,7 +177,7 @@
                   <a href="#" class="featured-link fw-500">閱讀內文</a>
                 </div>
               </li>
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo7.png" alt="code" class="featured-img" />
                 </div>
@@ -197,7 +198,7 @@
                   <a href="#" class="featured-link fw-500">閱讀內文</a>
                 </div>
               </li>
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo5.png" alt="code" class="featured-img" />
                 </div>
@@ -220,7 +221,7 @@
                   <a href="#" class="featured-link fw-500">閱讀內文</a>
                 </div>
               </li>
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo6.png" alt="code" class="featured-img" />
                 </div>
@@ -241,7 +242,7 @@
                   <a href="#" class="featured-link fw-500">閱讀內文</a>
                 </div>
               </li>
-              <li class="featured-list swiper-slide col-3">
+              <li class="featured-list col-3 swiper-slide">
                 <div>
                   <img src="/assets/images/Final/desktop/index/photo7.png" alt="code" class="featured-img" />
                 </div>
@@ -263,12 +264,6 @@
                 </div>
               </li>
             </ul>
-            <div class="swiper-button-prev">
-              <img src="/assets/images/Final/desktop/index/arrow-left.png" alt="left" />
-            </div>
-            <div class="swiper-button-next">
-              <img src="/assets/images/Final/desktop/index/arrow-right.png" alt="right" />
-            </div>
           </div>
         </div>
       </div>
@@ -471,22 +466,32 @@
     <%- include('./layout/footer'); -%>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
-        new Swiper(".swiper", {
+        new Swiper('.swiper', {
+          spaceBetween: 24,
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: '.arrow-next',
+            prevEl: '.arrow-pre',
           },
-          slidesPerView: 3,
-        });
-        new Swiper(".swiper", {
-          navigation: {
-            nextEl: ".swiper-button-next-bottom",
-            prevEl: ".swiper-button-prev-bottom",
-          },
-          slidesPerView: 3,
-        });
+          slidesPerView: 1,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+              grid: {
+                rows: 1
+              },
+              spaceBetween: 24
+            },
+            992: {
+              slidesPerView: 3,
+              grid: {
+                rows: 1
+              },
+              spaceBetween: 24
+            }
+          }
+        })
       </script>
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init({
@@ -499,7 +504,7 @@
           mirror: true,                 // true 表示滾過元素後向上滑回可再次播放（鏡像效果）
           anchorPlacement: 'top-bottom', // 判定元素相對視窗的位置來觸發動畫，例如 'top-bottom' 代表元素頂端到視窗底端
         });
-      </script>
+      </script> -->
       <script type="module" src="../main.js"></script>
 </body>
 
